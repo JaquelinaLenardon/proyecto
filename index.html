@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,38 +25,63 @@
         </ul>   
     </nav>
     </header>
+<main>
 
-    <main>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-          
-              <div class="carousel-item active" data-bs-interval="2500">
-                <img src="Orgulloyprejuicio.png" class="d-block w-100" alt="slide1">
-              </div>
-          
-              <div class="carousel-item" data-bs-interval="2500">
-                <img src="milnueve.png" class="d-block w-100" alt="slide2">
-              </div>
-          
-              <div class="carousel-item" data-bs-interval="2500">
-                <img src="cienanios.png" class="d-block w-100" alt="slide3">
-              </div>
-           </div>
-          
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-          
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </main>
+</main>
+
     
     <footer>
-    <form action=""></form>
+        <section>
+            <h1>Trabaja con nosotros</h1>
+            <p>Completa tus datos y comentanos por qué te gustaría formar parte de nuestro staff!</p>
+                <form action="https://formsubmit.co/jaquelinalenardon@hotmail.com" method="post">Trabaja con nosotros
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" maxlength="10" placeholder="Ingrese su nombre" required>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" maxlength="16"  placeholder="Ingrese su apellido" required>
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" name="nacimiento" id="nacimiento">
+                        <label for="mail">Email:</label>
+                        <input type="text" name="mail" id="mail">
+                        <label for="celular"></label>
+                        <input type="tel" name="celular" id="celular">
+                        <label for="curriculum">Adjuntar cv</label>
+                        <input type="file" name="curriculum" id="curriculum">
+                        <textarea name="motivacion" id="motivacion">Contanos por qué te gustaría trabajar con nosotros:</textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    </form>
+    </section>
+
+    <section>
+        <h1>Tengo un problema!</h1>
+        <p>Si tenes algún tipo de problema con la página, consulta o sugerencia, nos gustaría escucharte. Completa los datos a continuación y te contactamos.</p>
+        <form action="https://formsubmit.co/jaquelinalenardon@hotmail.com" method="post">
+            <div>
+                <h2>Selecciona lo que necesitas expresar:</h2>
+                <input type="radio" name="problematica" id="problematica"> <label for="problematica">Tengo un problema con mi compra</label>
+                <input type="radio" name="problematecnico" id="problematecnico"> <label for="problematecnico">Tengo un problema técnico</label>
+                <input type="radio" name="consulta" id="consulta"> <label for="consulta" aria-placeholder="Puede ser una consulta acerca de cuando ingresa un libro determinado, etc">Tengo un problema una consulta</label>
+                <input type="radio" name="sugerencia" id="sugerencia"> <label for="sugerencia">Me gustaría hacer una sugerencia</label>
+            </div>
+            
+            <fieldset>
+                <h2>Datos personales</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" maxlength="10" placeholder="Ingrese su nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" maxlength="16"  placeholder="Ingrese su apellido" required>
+            </fieldset>
+
+            <fieldset>
+                <h2>Escribe aqui lo que sucede:</h2>
+                <textarea name="comentario" id="comentario">De manera breve explica tu problema/consulta/sugerencia...</textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     </footer>
 </body>
 </html>
